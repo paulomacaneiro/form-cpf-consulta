@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { UntypedFormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-form-cpf',
@@ -9,7 +9,7 @@ import { FormControl } from '@angular/forms';
 export class FormCpfComponent implements OnInit {
 
 // use formbuilder to generate a form  wih a form field called cpf
-  cpfField = new FormControl(``,[]);
+  cpfField = new UntypedFormControl(``,[]);
 
   constructor() { }
 
